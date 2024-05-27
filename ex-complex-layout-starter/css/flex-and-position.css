@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #777;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 10px;
+    margin-block-end: 10px;
+    
+}
+
+header,
+footer {
+
+    background-color: rgb(185, 225, 240);
+}
+
+.logo {
+    flex-grow: 2;
+
+
+    font-family: monospace;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+    
+    gap: 25px;
+    justify-content: space-evenly;
+
+    flex-grow: 1;
+}
+
+header a {
+    width: auto;
+
+    text-decoration: none;
+    color: #777;
+}
+
+.login-btn {
+    margin-inline: 8vw 10px;
+}
+
+.back-to-top-btn {
+    position: fixed;
+    
+
+    bottom: 7vh;
+    left: 91vw;
+
+    height: 3em;
+    width: 3em;
+
+    background-color: rgba(125, 125, 203, 0.793);
+    border-radius: 30%;
+
+    text-align: center;
+    line-height: 3em;
+
+    color: #575757;
+    text-decoration: none;
+    opacity: 0;
+
+    transition: 400ms;
+    
+}
+
+.back-to-top-btn:hover {
+    background-color: rgb(59, 59, 108);
+    color: #ffffff;
+}
+
+main {
+    padding-inline: 1em;
+}
+
+.sticky-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sticky-container .text {
+    max-width: 60%;
+    
+    text-align: justify;
+}
+
+.sticky-container .text p {
+    padding-block-end: 2em;
+    border-block-end: 1px solid lightgrey;
+    margin-block-start: 1em;
+}
+
+.sticky-card {
+
+    height: max-content;
+    width: 240px;
+
+    padding: 1em;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 6px;
+    box-shadow: 1px 1px 5px #cfcfcf;
+
+    margin-block-start: 1em;
+    margin-inline: auto;
+}
+
+.sticky-card h2 {
+    margin-block-start: 0;
+    margin-block-end: .5em;
+
+    color: rgb(146, 146, 146);
+    text-align: justify;
+}
+
+.sticky-card h3 {
+    margin-block-start: 0;
+    margin-block-end: .5em;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .75em;
+    color: rgb(192, 192, 192);
+    font-weight: 100;
+}
+
+.sticky-card p {
+    margin-block: 2em 4em;
+
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: .82em;
+    color: rgb(192, 192, 192);
+    text-align: justify;
+
+}
+
+.sticky-card button {
+    height: 2.5em;
+    width: 100%;
+
+    margin-block-start: auto;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+
+    background-color: rgb(255, 195, 83);
+    border: 1px solid lightgrey;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px #cfcfcf;
+}
+
+.backdrop {
+    background-color: rgb(177, 177, 177, .6);
+
+    opacity: 0;
+    transition: opacity .8s ease-out;
+}
+
+footer {
+    padding: 1px 5px;
+}
+
+.modal {
+    padding: 1em;
+
+    background-color: rgb(252, 252, 252);
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgb(173 173 173);
+
+    opacity: 0;
+    transition: opacity .8s ease-out;
+}
+
+.modal .btn-close {
+    border: 2px solid lightgrey;
+    box-shadow: 3px 3px 6px rgb(173 173 173);
+}

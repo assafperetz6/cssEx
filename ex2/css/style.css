@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    /* margin: 0; */
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.box {
+    flex-basis: 200px;
+    flex-grow: 1;
+    height: 200px;
+
+    background-color: rgb(89, 127, 223);
+}
